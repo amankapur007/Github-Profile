@@ -1,16 +1,16 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { ProfileSearch } from '../profile-search/profile-search';
 
 @NgModule({
   declarations: [
-    HomePage
+    ProfileSearch
   ],
   imports: [
-    IonicPageModule.forChild(HomePage)
+    IonicPageModule.forChild(ProfileSearch)
   ],
   entryComponents: [
-    HomePage
+    ProfileSearchModule
   ]
 })
-export class HomePageModule {}
+export class ProfileSearchModule {}

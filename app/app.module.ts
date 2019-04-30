@@ -2,13 +2,14 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { HomePageModule } from '../pages/home/home.module';
+import { ProfileSearch } from '../pages/profile-search/profile-search';
+import { ProfileSearchResult } from '../pages/profile-search-result/profile-search-result';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    ProfileSearch,
+    ProfileSearchResult
   ],
   imports: [
     BrowserModule,
@@ -17,7 +18,7 @@ import { HomePageModule } from '../pages/home/home.module';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    ProfileSearch
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}

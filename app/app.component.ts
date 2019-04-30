@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
-import { HomePage } from '../pages/home/home';
+import { ProfileSearch } from '../pages/profile-search/profile-search';
 
 
 
@@ -8,7 +8,7 @@ import { HomePage } from '../pages/home/home';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = ProfileSearch;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
