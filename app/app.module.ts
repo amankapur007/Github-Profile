@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { ProfileSearch } from '../pages/profile-search/profile-search';
 import { ProfileSearchResult } from '../pages/profile-search-result/profile-search-result';
+import { GithubService}from '../providers/github.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProfileSearchResult } from '../pages/profile-search-result/profile-sear
     ProfileSearchResult
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    GithubService
   ]
 })
 export class AppModule {}
