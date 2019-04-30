@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
-import { ProfileSearchResult } from '../pages/profile-search-result/profile-search-result';
+import { ProfileSearchResult } from '../profile-search-result/profile-search-result';
 
 @IonicPage()
 @Component({

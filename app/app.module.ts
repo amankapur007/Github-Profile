@@ -18,7 +18,8 @@ import { ProfileSearchResult } from '../pages/profile-search-result/profile-sear
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    ProfileSearch
+    ProfileSearch,
+    ProfileSearchResult
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}

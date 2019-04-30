@@ -4,7 +4,7 @@ import { NavController, NavParams, IonicPage } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page.rofile-search-result',
-  templateUrl: './profile-search-result.component.html',
+  templateUrl: './profile-search-result.html',
 })
 export class ProfileSearchResult{
 
