@@ -8,15 +8,16 @@ import { HomePageModule } from '../pages/home/home.module';
 @NgModule({
   declarations: [
     MyApp,
+    HomePage
   ],
   imports: [
     BrowserModule,
-    HomePageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    HomePage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}
