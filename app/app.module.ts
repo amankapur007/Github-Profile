@@ -6,6 +6,7 @@ import { ProfileSearch } from '../pages/profile-search/profile-search';
 import { ProfileSearchResult } from '../pages/profile-search-result/profile-search-result';
 import { GithubService}from '../providers/github.service';
 import { SearchResultsComponent } from '../components/search-results/search-results.component';
+import { RepositoriesComponent } from '../components/repositories/repositories.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SearchResultsComponent } from '../components/search-results/search-resu
     MyApp,
     ProfileSearch,
     ProfileSearchResult,
-    SearchResultsComponent
+    SearchResultsComponent,
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { SearchResultsComponent } from '../components/search-results/search-resu
     MyApp,
     ProfileSearch,
     ProfileSearchResult,
-    SearchResultsComponent
+    SearchResultsComponent,
+    RepositoriesComponent
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},

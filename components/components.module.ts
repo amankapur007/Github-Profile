@@ -6,7 +6,7 @@ import { RepositoriesComponent } from './repositories/repositories.component'
 @NgModule({
   declarations:[SearchResultsComponent, RepositoriesComponent],
   imports:[IonicModule],
-  exports:[SearchResultsComponent]
+  exports:[SearchResultsComponent,RepositoriesComponent]
 })
 
 export class ComponentsModule{

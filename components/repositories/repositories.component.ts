@@ -7,7 +7,7 @@ import { Repository } from '../../models/repository'
 })
 export class RepositoriesComponent implements OnInit {
 
-  @Input() repo:Repository
+  @Input() repo:Repository[]
   constructor() { }
 
   ngOnInit() {
