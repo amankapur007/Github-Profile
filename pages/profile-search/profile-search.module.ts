@@ -9,8 +9,8 @@ import { ProfileSearch } from '../profile-search/profile-search';
   imports: [
     IonicPageModule.forChild(ProfileSearch)
   ],
-  entryComponents: [
-    ProfileSearchModule
+  exports: [
+    ProfileSearch
   ]
 })
 export class ProfileSearchModule {}

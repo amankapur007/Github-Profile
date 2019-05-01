@@ -11,8 +11,8 @@ import { ComponentsModule } from '../../components/components.module';
     IonicPageModule.forChild(ProfileSearchResult),
     ComponentsModule
   ],
-  entryComponents: [
-    ProfileSearchResultModule,
+  exports: [
+    ProfileSearchResult,
   ]
 })
 export class ProfileSearchResultModule {}
