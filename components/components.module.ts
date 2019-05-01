@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { SearchResultsComponent } from './search-results/search-results.component';
-import { IonicModule} from 'ionic-angular'
+import { IonicModule} from 'ionic-angular';
+import { RepositoriesComponent } from './repositories/repositories.component'
 
 @NgModule({
-  declarations:[SearchResultsComponent],
+  declarations:[SearchResultsComponent, RepositoriesComponent],
   imports:[IonicModule],
   exports:[SearchResultsComponent]
 })
