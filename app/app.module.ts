@@ -5,12 +5,15 @@ import { MyApp } from './app.component';
 import { ProfileSearch } from '../pages/profile-search/profile-search';
 import { ProfileSearchResult } from '../pages/profile-search-result/profile-search-result';
 import { GithubService}from '../providers/github.service';
+import { SearchResultsComponent } from '../components/search-results/search-results.component';
+
 
 @NgModule({
   declarations: [
     MyApp,
     ProfileSearch,
-    ProfileSearchResult
+    ProfileSearchResult,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import { GithubService}from '../providers/github.service';
   entryComponents: [
     MyApp,
     ProfileSearch,
-    ProfileSearchResult
+    ProfileSearchResult,
+    SearchResultsComponent
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},
