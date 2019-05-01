@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams, IonicPage } from 'ionic-angular';
 import { GithubService } from '../../providers/github.service';
+import { User } from '../../models/user';
 
 @IonicPage()
 @Component({
@@ -9,14 +10,15 @@ import { GithubService } from '../../providers/github.service';
 })
 export class ProfileSearchResult{
 
+  user:User;
   constructor(public navCtrl: NavController, private navParams: NavParams,
   private githubService:GithubService) {
 
   }
 
 getUserInformation(username:string):void{
-  this.githubService.getMockInformation(username).subscribe(data=>{
-    console.log(data);
+  this.githubService.getMockInformation(username).subscribe((data:User)=>{
+    this.user=data;
   })
 }
   ionViewDidLoad(){
