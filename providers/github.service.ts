@@ -18,13 +18,21 @@ export class GithubService {
   constructor(private http:Http) { }
 
 getUserInformation(username:string):Observable<User>{
-    return this.http.get(`${this.api}/users/${username}`)
-    .do(data=>console.log(data.json()))
+    return this.http.get(`${this.api}/${username}`)
+    .do((data:Response)=>console.log(data))
     .map((data:Response)=>data.json())
-    .do(data=>console.log(data.json()))
-    .catch(error=>error.json() || 'Server Error')
+    .do(data=>console.log(data))
+    .catch(error=>Observable.throw(error.json().error || 'Server Error'))
   }
   
+getRepoInformation(username:string,url:string):Observable<Repository[]>{
+    return this.http.get(`${url}`)
+    .do((data:Response)=>console.log(data))
+    .map((data:Response)=>data.json())
+    .do(data=>console.log(data))
+    .catch(error=>Observable.throw(error.json().error || 'Server Error'))
+  }
+
 getMockRepositoryInformation(username:string):Observable<Repository[]>{
     return Observable.of(REPOSITORY_LIST.filter(repo=>username==repo["name"]));
   }

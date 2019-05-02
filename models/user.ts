@@ -3,5 +3,6 @@ export interface User {
   company:string;
   location:string;
   bio:string;
-  avatar_url:string
+  avatar_url:string;
+  repos_url:string
 }
