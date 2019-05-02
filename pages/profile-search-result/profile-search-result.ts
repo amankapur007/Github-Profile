@@ -4,7 +4,9 @@ import { GithubService } from '../../providers/github.service';
 import { User } from '../../models/user';
 import { Repository } from '../../models/repository';
 
-@IonicPage()
+@IonicPage({
+  segment:'profile/results/:username'
+})
 @Component({
   selector: 'page.rofile-search-result',
   templateUrl: './profile-search-result.html',
