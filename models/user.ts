@@ -4,5 +4,5 @@ export interface User {
   location:string;
   bio:string;
   avatar_url:string;
-  repos_url:string
+  repos_url:string;
 }

@@ -22,14 +22,9 @@ export class ProfileSearchResult{
 getUserInformation(username:string):void{
   this.githubService.getUserInformation(username).subscribe((data:User)=>{
     this.user=data;
-  });
-
-  this.githubService.getRepoInformation(username,this.user.repos_url).subscribe((data:Repository[])=>{
+    this.githubService.getRepoInformation(username,this.user.repos_url).subscribe((data:Repository[])=>{
     this.repositories=data;
   });
-  
-  this.githubService.getMockRepositoryInformation(username).subscribe((data:Repository[])=>{
-    this.repositories=data;
   });
 }
   ionViewDidLoad(){
