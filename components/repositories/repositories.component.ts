@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Repository } from '../../models/repository'
 @Component({
-  selector: 'repositories',
+  selector: 'repository',
   templateUrl: './repositories.component.html',
   styleUrls: ['./repositories.component.css']
 })
