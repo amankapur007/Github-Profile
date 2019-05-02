@@ -7,6 +7,7 @@ import { ProfileSearchResult } from '../pages/profile-search-result/profile-sear
 import { GithubService}from '../providers/github.service';
 import { SearchResultsComponent } from '../components/search-results/search-results.component';
 import { RepositoriesComponent } from '../components/repositories/repositories.component';
+import { Http, HttpModule} from '@angular/http'
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RepositoriesComponent } from '../components/repositories/repositories.c
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

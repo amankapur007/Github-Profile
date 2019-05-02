@@ -20,7 +20,7 @@ export class ProfileSearchResult{
   }
   
 getUserInformation(username:string):void{
-  this.githubService.getMockInformation(username).subscribe((data:User)=>{
+  this.githubService.getUserInformation(username).subscribe((data:User)=>{
     this.user=data;
   });
   this.githubService.getMockRepositoryInformation(username).subscribe((data:Repository[])=>{
